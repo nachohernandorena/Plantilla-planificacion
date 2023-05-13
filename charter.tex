@@ -1,34 +1,34 @@
 \documentclass[
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
-codirector, % Uncomment to add a codirector to the title page
+%codirector, % Uncomment to add a codirector to the title page
 ]{charter} 
 
 
 
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+\titulo{Sistema de gestión remota de ganado} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
-\posgrado{Carrera de Especialización en Sistemas Embebidos} 
-%\posgrado{Carrera de Especialización en Internet de las Cosas} 
+%\posgrado{Carrera de Especialización en Sistemas Embebidos} 
+\posgrado{Carrera de Especialización en Internet de las Cosas} 
 %\posgrado{Carrera de Especialización en Intelegencia Artificial}
 %\posgrado{Maestría en Sistemas Embebidos} 
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Nombre del Autor} 
+\autor{Ing. Ignacio Pablo Hernandorena} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Nombre del Director}
-\pertenenciaDirector{pertenencia} 
+\director {Mg. Ing. Carlos Canal (pendiente aprobación)}
+\pertenenciaDirector{UNSAM} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
-\codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
-\pertenenciaCoDirector{FIUBA}
+%\codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
+%\pertenenciaCoDirector{FIUBA}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+\cliente{-}
+\empresaCliente{Empresas o personas en el rubro ganadero}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -38,9 +38,9 @@ codirector, % Uncomment to add a codirector to the title page
 \juradoTres{Nombre y Apellido (3)}
 \pertenenciaJurTres{pertenencia (3)}
  
-\fechaINICIO{30 de abril de 2021}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlan{18 de junio de 2021} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de mayo de 2022}	%Fecha de defensa pública del trabajo final
+\fechaINICIO{25 de abril de 2023}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlan{13 de junio de 2023} 	%Fecha de final de cursada de GdP
+\fechaFINALTrabajo{15 de mayo de 2024}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -69,7 +69,7 @@ codirector, % Uncomment to add a codirector to the title page
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
-%1      & Se completa hasta el punto 4 inclusive                 & dd/mm/aaaa \\ \hline
+1      & Se completa hasta el punto 5 inclusive                 & 09 de mayo de 2023 \\ \hline
 %2      & Se completa hasta el punto 7 inclusive
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en \textcolor{red}{la implementación de un prototipo de un sistema de control de temperatura de un calefón}, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} h de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de gestión remota de ganado, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600}\ horas de trabajo y \textcolor{red}{\$XX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -115,52 +115,51 @@ Se adjunta a esta acta la planificación inicial.
 \section{1. Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
+La tecnología IoT (del inglés \emph{Internet of Things}) ha revolucionado muchas industrias, incluida la agrícola y ganadera. El desarrollo de sistemas de gestión de ganado utilizando IoT ayuda al personal rural a monitorear y controlar sus tierras y animales, proporcionando así condiciones óptimas para el progreso de esta actividad.
 
-\begin{consigna}{red} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección. En cada entrega parcial deben eliminar los comandos begin y end del bloque consigna de las secciones que hayan completado.
+Hoy existe una demanda de este tipo de tecnología en Argentina, donde la ganadería es una parte importante de la economía. Algunos de los desafíos comunes que enfrentan los propietarios y cuidadores de ganado es controlar que los animales no deambulen y se pierdan, o que causen daños a los cultivos y a otras propiedades.
 
-El objetivo es que el lector en una o dos páginas entienda de qué trata el proyecto y cuáles son sus desafíos, cuál es la motivación para realizarlo y su importancia.
+Mediante el uso de la tecnología IoT se puede desarrollar un dispositivo que ayude a mantener al ganado en su lugar. Si a esto se le suma la posibilidad de mantener un registro completo de cada animal se obtiene una solución integral para el propietario.
 
-Se debe introducir el contexto del proyecto, el estado del arte en la temática, describir la propuesta de valor, cúal es el problema que atiende y cuál es la solución que se propone. Se debe dar una descripción funcional de la solución que incluya un diagrama en bloques.
+Para abordar esta problemática se propone la implementación de un prototipo que utilizará un sistema IoT para la gestión remota de ganado. Cabe mencionar que este proyecto se trata de una iniciativa personal, con el objetivo de contribuir al avance en el ámbito de la tecnología y la ganadería.
 
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
+El sistema consta de etiquetas electrónicas (en adelante denominados \emph{TAGs}) que serán fijadas en las orejas de los animales. Para ello, se utilizarán dispositivos de bajo consumo de energía que emplean la tecnología de red de largo alcance conocida como LoRaWAN. Además, se desarrollará una plataforma que permitirá gestionar, controlar, almacenar y visualizar los datos generados por estos dispositivos.
 
-\begin{itemize}
-	\item ¿Cuál es el contexto del proyecto, es un emprendimiento personal, un proyecto para una empresa, es parte del programa de vinculación con empresas del posgrado?
-	\item ¿Existen o aplican condiciones especiales al proyecto, financiamiento de algún programa público o privado, acuerdos de confidencialidad, acuerdos sobre la propiedad intelectual de los entregables u otros?
-	\item ¿Cómo se compara la solución propuesta con el estado del arte en el campo de aplicación? ¿En qué aspectos destaca?
-	\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-	\item ¿En qué estado del ciclo de vida está la solución que se propone?
-	\item ¿Cuáles son las características del cliente (el adoptante de los entregables del proyecto) qué valora, qué necesita?
-	\item ¿Por dónde pasa la innovación?
-\end{itemize}
+Como se puede observar en la figura \ref{fig:diagBloques}, para implementar este sistema se requieren diversos componentes, como los \emph{TAGs}. Los mismos estarán compuestos de un panel solar, un sistema de alimentación, el GPS (del inglés \emph{Global Positioning System}) y el dispositivo con LoRaWAN que obtendrá los datos y los enviará a un gateway. 
 
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema} y descripción funcional de la solución propuesta.
+El gateway actuará recopilando y procesando la información de los \emph{TAGs} y enviándola a una base de datos remota. Este dispositivo requerirá una conexión a internet para la vinculación con la plataforma en la nube llamada \emph{The Things Stack}.
 
-Las figuras se deben mencionar en el texto ANTES de que aparezcan con una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''.  La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+\emph{The Things Stack} es un servidor de red LoRaWAN altamente escalable y de código abierto que permite que las aplicaciones y los servicios de IoT conecten y administren dispositivos, datos y aplicaciones de manera segura. 
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.5\textwidth]{./Figuras/diagBloques.png}
+\includegraphics[width=.7\textwidth]{./Figuras/diagBloques.png}
 \caption{Diagrama en bloques del sistema}
 \label{fig:diagBloques}
 \end{figure}
 
-\vspace{25px}
+\emph{The Things Stack} ofrece una amplia gama de servicios para admitir aplicaciones IoT, dentro de los que se incluyen: 
+\begin{itemize}
+	\item Servidor de gateway: proporciona herramientas para administrar dispositivos y sus datos asociados, incluida la activación, el registro y la autorización de dispositivos.
+	\item Servidor de identidad: ofrece características de seguridad avanzadas, incluido el cifrado de extremo a extremo y protocolos de comunicación seguros, para garantizar la privacidad y seguridad de los datos de IoT.
+	\item Servidor LoRaWAN: es el encargado de recibir y procesar datos de dispositivos IoT y de administrar la activación, la seguridad y el cifrado de datos del dispositivo. Además permite la recopilación, el almacenamiento y el análisis de datos generados por los dispositivos IoT.
+	\item Servidor de registro: es responsable de autorizar de forma segura nuevos dispositivos para conectarse a la red y de administrar el proceso de autenticación de dispositivos.
+	\item Servidor de aplicaciones: debe procesar y enrutar los datos de los dispositivos a las aplicaciones o servicios apropiados.
+	\item Monitoreo:
+		\begin{itemize}
+		\item Tablero: consiste en un tablero personalizable que muestra información en tiempo real sobre el rendimiento de la red, la actividad del dispositivo y el uso de datos.
+		\item Eventos: se pueden visualizar alertas y notificaciones para eventos clave, como activación de dispositivos, transmisión de datos y problemas de rendimiento de la red.
+		\end{itemize}
+	\item Integración: ofrece una variedad de opciones de integración para conectarse con otros sistemas, como otras plataformas en la nube, bases de datos y herramientas de análisis. Para este proyecto se realizará una integración mediante HTTP (del inglés \emph{Hypertext Transfer Protocol}) a \emph{AllThingsTalk}.
+\end{itemize}
 
-El tamaño de la tipografía en TODAS las figuras debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama, preferentemente en la gama de colores pastel.
-\end{consigna}
+\emph{AllThingsTalk} es una plataforma de IoT basada en la nube que proporciona una variedad de herramientas y servicios para crear, implementar y administrar aplicaciones y dispositivos de IoT. Esta plataforma ofrece una interfaz fácil de usar y un conjunto de componentes básicos personalizables, lo que facilita la creación y el escalado de soluciones de IoT para una variedad de industrias y casos de uso. 
+
+Los usuarios utilizarán la plataforma para delimitar las áreas permitidas para la circulación de los animales, establecer las alarmas y monitorear el ganado en tiempo real. Además, se establecerá la conexión de la aplicación generada en \emph{AllThingsTalk} a una base de datos donde se guardará el registro médico de cada animal. 
+
 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
-
-\begin{consigna}{red} % este comando se debe borrar para la entrega, junto con la contraparte \end{consigna}{red} 
- 
-\textbf{Nota importante:} borrar esto y todas las consignas en color rojo antes de entregar este documento). Esto se hace eliminando el par de comandos que forman el bloque consigna, \verb!\begin{consigna}{red}! y \verb!\end{consigna}{red}! del código. 
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos. Si se considera que una persona cumple dos o más roles, entonces solo dejarla en el rol más importante. 
-
-Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente. Si una persona es el Responsable, no debe ser colocado también como miembro del equipo.
-
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -169,100 +168,111 @@ Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+Cliente       & \clientename      &\empclientename	&   -     	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &                   &              	&        	\\ \hline
-Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+Orientador    & \supname	      & \pertesupname 	& Director trabajo final \\ \hline
+Usuario final & Personal rural         &  -           	&   -     	\\ \hline
 \end{tabularx}
 \end{table}
 
-El Director suele ser uno de los Orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Es deseable listar a continuación las principales características de cada interesado.
  
-Por ejemplo:
+Características de los interesados:
 \begin{itemize}
-	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-	\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
-	\item Orientador: María Gómez va a poder ayudar mucho con la definición de los requerimientos.
+	\item Cliente: es el propietario del ganado, ya sea una persona o una empresa que busca mejorar la gestión de sus animales mediante el uso de tecnología IoT. Este grupo de interesados espera obtener beneficios como la reducción de costos, la mejora en la calidad de vida de los animales y la disminución de pérdidas o daños causados por el ganado.
+	\item Orientador: es responsable de garantizar que el proyecto cumpla con los estándares de calidad y que se sigan las mejores prácticas en el desarrollo de software y hardware. La disponibilidad horaria esta acotada de lunes a viernes de 9 a 18 hs. 
+	\item Usuarios: es el personal rural encargado de cuidar y monitorear el ganado utilizando el sistema de gestión de ganado IoT.
 \end{itemize}
-
-\end{consigna} % este comando se debe borrar para la entrega, junto con la contraparte \begin{consigna}{red}
-
 
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
-
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
-\end{consigna}
+El propósito de este proyecto es desarrollar un sistema de monitoreo remoto de ganado que permita a las empresas, o personas relacionadas a este sector, tener acceso a información en tiempo real sobre la ubicación y el estado de su ganado, lo que les permitirá, en base a información detallada, mejorar la toma de decisiones y la eficiencia en la gestión. Este sistema deberá ser fácil de usar y escalable para adaptarse a cualquier tipo de establecimiento, ya sea pequeño o grande.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+El alcance del proyecto incluye el desarrollo de un prototipo de sistema de gestión de ganado utilizando tecnología IoT. El sistema estará compuesto de \emph{TAGs} que se fijarán en las orejas de los animales utilizando dispositivos de bajo consumo de energía con tecnología de red de largo alcance conocida como LoRaWAN. Además, se dispondrá de una plataforma en la nube llamada \emph{The Things Stack} para la gestión, el control, almacenamiento y visualización de los datos que generan estos dispositivos. Se integrará la plataforma mediante HTTP a \emph{AllThingsTalk}, que será utilizada por los usuarios para delimitar las áreas permitidas para la circulación de los animales, establecer alarmas y monitorear el ganado en tiempo real. También se establecerá la conexión de la aplicación generada en \emph{AllThingsTalk} a una base de datos donde se guardará el registro médico de cada animal.
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+No se incluyen en este proyecto aspectos relacionados con el desarrollo de hardware o software para dispositivos móviles. Tampoco se incluye la instalación de la infraestructura necesaria para la conexión a internet o para el uso del sistema de gestión de ganado. Asimismo, este proyecto no contempla la producción a gran escala de los \emph{TAGs} o la distribución de los mismos. 
 
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
-
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
-
-\end{consigna}
+Este proyecto se centrará únicamente en el desarrollo de un prototipo que pueda ser utilizado como una prueba de concepto para demostrar la viabilidad del sistema de gestión de ganado mediante IoT.
 
 
 \section{5. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+Para el desarrollo del presente proyecto se supone que:
 
 \begin{itemize}
-	\item Supuesto 1
-	\item Supuesto 2...
+	\item Se contará con el tiempo necesario para la realización de las tareas específicas del proyecto.
+	\item Los recursos financieros necesarios para la ejecución del proyecto estarán disponibles en tiempo y forma.
+	\item La tecnología y las herramientas necesarias para el desarrollo del proyecto estarán disponibles y en condiciones óptimas de funcionamiento.
+	\item No habrá cambios significativos en las condiciones macroeconómicas que afecten de manera importante la ejecución del proyecto.
+	\item El entorno regulatorio y normativo en el que se desarrollará el proyecto permanecerá estable y sin cambios importantes que afecten la ejecución del proyecto.
+	\item Los proveedores y terceros involucrados en el proyecto cumplirán con sus compromisos en tiempo y forma.
+	\item Los animales se encuentran en un radio igual o menor en el que se puede utilizar la tecnología de LoRaWAN. 
+	\item Los imprevistos y cambios inesperados que puedan surgir durante el desarrollo del proyecto se abordarán de manera eficiente y efectiva para minimizar su impacto en el éxito del proyecto.
+	\item Se mantendrá una comunicación clara y efectiva con los interesados involucrados en el proyecto para garantizar una adecuada coordinación y colaboración.
 \end{itemize}
 
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
+\vspace*{\fill}
+\pagebreak
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
 
-\begin{consigna}{red}
-Los requerimientos deben numerarse y de ser posible estar agruparlos por afinidad, por ejemplo:
-
 \begin{enumerate}
 	\item Requerimientos funcionales
 		\begin{enumerate}
-			\item El sistema debe...
-			\item Tal componente debe...
-			\item El usuario debe poder...
+			\item El sistema debe permitir la instalación y configuración de TAGs electrónicas en las orejas de los animales.
+			\item Debe utilizar dispositivos de bajo consumo de energía con tecnología LoRaWAN para la transmisión de datos.
+			\item debe recopilar y procesar la información de las TAGs electrónicas y enviarla al gateway.
+			\item El sistema debe proporcionar una plataforma para la gestión, control, almacenamiento y visualización de los datos generados por los dispositivos.
+			\item El sistema debe permitir delimitar áreas permitidas para la circulación de los animales.
+			\item El sistema debe ofrecer la posibilidad de establecer alarmas para eventos relevantes, como la salida de un animal del área permitida.
+			\item El sistema debe permitir el monitoreo en tiempo real del ganado a través de un tablero personalizable.
 		\end{enumerate}
+	\item Requerimientos de seguridad
+		\begin{enumerate}
+			\item El sistema debe garantizar la privacidad y seguridad de los datos de IoT mediante características de seguridad avanzadas, como el cifrado de extremo a extremo y protocolos de comunicación seguros.
+			\item El sistema debe contar con un proceso de autenticación seguro para nuevos dispositivos que se conecten a la red.
+		\end{enumerate}
+		
+	\item Requerimientos de integración
+		\begin{enumerate}
+			\item El sistema debe integrarse con la plataforma en la nube \emph{The Things Stack} a través de una conexión a internet.
+			\item El sistema debe permitir la integración con otras plataformas en la nube, bases de datos y herramientas de análisis mediante HTTP, utilizando la plataforma \emph{AllThingsTalk}.
+		\end{enumerate}
+		
 	\item Requerimientos de documentación
 		\begin{enumerate}
-			\item Requerimiento 1
-			\item Requerimiento 2 (prioridad menor)
+			\item Se debe generar documentación detallada sobre la instalación, configuración y uso del sistema.
+			\item Se debe proporcionar documentación sobre las normas y regulaciones vigentes relacionadas con el monitoreo remoto de ganado
 		\end{enumerate}
-	\item Requerimiento de testing...
-	\item Requerimientos de la interfaz...
-	\item Requerimientos interoperabilidad...
-	\item etc...
+		
+	\item Requerimiento de testing
+		\begin{enumerate}
+			\item El sistema debe ser sometido a pruebas exhaustivas para verificar su funcionalidad y rendimiento.
+			\item Se deben realizar pruebas de integración para garantizar la correcta comunicación entre los componentes del sistema.
+			\item Se deben realizar pruebas de interoperabilidad para asegurar que el sistema funcione correctamente con diferentes dispositivos y plataformas.
+			\item Se deben realizar pruebas de seguridad para identificar posibles vulnerabilidades y asegurar la protección de los datos.
+			\item Se deben documentar los resultados de las pruebas y realizar las correcciones necesarias antes de la implementación final del sistema.
+		\end{enumerate}
+		
+	\item Requerimientos de la interfaz
+		\begin{enumerate}			
+			\item La interfaz de usuario debe ser intuitiva y fácil de usar, permitiendo a los usuarios interactuar de manera sencilla con el sistema.
+			\item Debe existir un panel de control centralizado que muestre información en tiempo real sobre el estado del ganado, incluyendo ubicación, actividad y alertas.
+			\item  Se deben proporcionar herramientas de configuración y personalización de las áreas permitidas para la circulación del ganado, así como la definición de alarmas y notificaciones.
+			\item La interfaz debe permitir el acceso a un registro médico completo de cada animal, incluyendo historial de enfermedades, vacunas y tratamientos.
+			\item La interfaz debe ser compatible con diferentes navegadores web populares, como Chrome, Firefox, Safari, etc.
+			\item Se debe garantizar la seguridad de la interfaz, protegiendo los datos y proporcionando mecanismos de autenticación y autorización para los usuarios.
+		\end{enumerate}
+		
 \end{enumerate}
 
+\begin{consigna}{red}
 Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
 
 Indicar claramente cuál es la prioridad entre los distintos requerimientos y si hay requerimientos opcionales. 
@@ -275,8 +285,8 @@ Y al escribirlos seguir las siguientes reglas:
 	\item Ser específico: no dejar lugar a confusiones.
 	\item Expresar los requerimientos en términos que sean cuantificables y medibles.
 \end{itemize}
-
 \end{consigna}
+
 
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
