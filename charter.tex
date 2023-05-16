@@ -70,7 +70,7 @@
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
 1      & Se completa hasta el punto 5 inclusive                 & 09 de mayo de 2023 \\ \hline
-%2      & Se completa hasta el punto 7 inclusive
+2      & Se completa hasta el punto 9 inclusive				   & 16 de mayo de 2023 \\ \hline
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
 %		  Así                                                    & dd/mm/aaaa \\ \hline
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de gestión remota de ganado, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600}\ horas de trabajo y \textcolor{red}{\$XX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de gestión remota de ganado, y tendrá un presupuesto preliminar estimado de 596 horas de trabajo y \textcolor{red}{\$XX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -216,8 +216,6 @@ Para el desarrollo del presente proyecto se supone que:
 	\item Se mantendrá una comunicación clara y efectiva con los interesados involucrados en el proyecto para garantizar una adecuada coordinación y colaboración.
 \end{itemize}
 
-\vspace*{\fill}
-\pagebreak
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
@@ -225,132 +223,167 @@ Para el desarrollo del presente proyecto se supone que:
 \begin{enumerate}
 	\item Requerimientos funcionales
 		\begin{enumerate}
-			\item El sistema debe permitir la instalación y configuración de TAGs electrónicas en las orejas de los animales.
-			\item Debe utilizar dispositivos de bajo consumo de energía con tecnología LoRaWAN para la transmisión de datos.
-			\item debe recopilar y procesar la información de las TAGs electrónicas y enviarla al gateway.
-			\item El sistema debe proporcionar una plataforma para la gestión, control, almacenamiento y visualización de los datos generados por los dispositivos.
-			\item El sistema debe permitir delimitar áreas permitidas para la circulación de los animales.
-			\item El sistema debe ofrecer la posibilidad de establecer alarmas para eventos relevantes, como la salida de un animal del área permitida.
-			\item El sistema debe permitir el monitoreo en tiempo real del ganado a través de un tablero personalizable.
+			\item El sistema deberá permitir la instalación y configuración de \emph{TAGs} en las orejas de los animales.
+			\item El sistema deberá utilizar dispositivos de bajo consumo de energía con tecnología LoRaWAN para la transmisión de datos.
+			\item El sistema deberá recopilar y procesar la información de los \emph{TAGs} y enviarla al gateway.
+			\item El sistema deberá proporcionar una plataforma para la gestión, control, almacenamiento y visualización de los datos generados por los dispositivos.
+			\item El sistema deberá permitir delimitar áreas permitidas para la circulación de los animales.
+			\item El sistema deberá ofrecer la posibilidad de establecer alarmas para eventos relevantes, como la salida de un animal del área permitida.
+			\item El sistema deberá permitir el monitoreo en tiempo real del ganado a través de un tablero personalizable.
 		\end{enumerate}
 	\item Requerimientos de seguridad
 		\begin{enumerate}
-			\item El sistema debe garantizar la privacidad y seguridad de los datos de IoT mediante características de seguridad avanzadas, como el cifrado de extremo a extremo y protocolos de comunicación seguros.
-			\item El sistema debe contar con un proceso de autenticación seguro para nuevos dispositivos que se conecten a la red.
+			\item El sistema deberá garantizar la privacidad y seguridad de los datos de IoT mediante características de seguridad avanzadas, como el cifrado de extremo a extremo y protocolos de comunicación seguros.
+			\item El sistema deberá contar con un proceso de autenticación seguro para nuevos dispositivos que se conecten a la red.
 		\end{enumerate}
 		
 	\item Requerimientos de integración
 		\begin{enumerate}
-			\item El sistema debe integrarse con la plataforma en la nube \emph{The Things Stack} a través de una conexión a internet.
-			\item El sistema debe permitir la integración con otras plataformas en la nube, bases de datos y herramientas de análisis mediante HTTP, utilizando la plataforma \emph{AllThingsTalk}.
+			\item El sistema deberá integrarse con la plataforma en la nube \emph{The Things Stack} a través de una conexión a internet.
+			\item El sistema deberá permitir la integración con otras plataformas en la nube, bases de datos y herramientas de análisis mediante HTTP, utilizando la plataforma \emph{AllThingsTalk}.
 		\end{enumerate}
 		
 	\item Requerimientos de documentación
 		\begin{enumerate}
-			\item Se debe generar documentación detallada sobre la instalación, configuración y uso del sistema.
-			\item Se debe proporcionar documentación sobre las normas y regulaciones vigentes relacionadas con el monitoreo remoto de ganado
+			\item Se deberá generar documentación detallada sobre la instalación, configuración y uso del sistema.
+			\item Se deberá proporcionar documentación sobre las normas y regulaciones vigentes relacionadas con el monitoreo remoto de ganado definidas por el INTA (Instituto Nacional de Tecnología Agropecuaria) .
 		\end{enumerate}
-		
-	\item Requerimiento de testing
-		\begin{enumerate}
-			\item El sistema debe ser sometido a pruebas exhaustivas para verificar su funcionalidad y rendimiento.
-			\item Se deben realizar pruebas de integración para garantizar la correcta comunicación entre los componentes del sistema.
-			\item Se deben realizar pruebas de interoperabilidad para asegurar que el sistema funcione correctamente con diferentes dispositivos y plataformas.
-			\item Se deben realizar pruebas de seguridad para identificar posibles vulnerabilidades y asegurar la protección de los datos.
-			\item Se deben documentar los resultados de las pruebas y realizar las correcciones necesarias antes de la implementación final del sistema.
-		\end{enumerate}
-		
+	
 	\item Requerimientos de la interfaz
 		\begin{enumerate}			
-			\item La interfaz de usuario debe ser intuitiva y fácil de usar, permitiendo a los usuarios interactuar de manera sencilla con el sistema.
-			\item Debe existir un panel de control centralizado que muestre información en tiempo real sobre el estado del ganado, incluyendo ubicación, actividad y alertas.
-			\item  Se deben proporcionar herramientas de configuración y personalización de las áreas permitidas para la circulación del ganado, así como la definición de alarmas y notificaciones.
-			\item La interfaz debe permitir el acceso a un registro médico completo de cada animal, incluyendo historial de enfermedades, vacunas y tratamientos.
-			\item La interfaz debe ser compatible con diferentes navegadores web populares, como Chrome, Firefox, Safari, etc.
-			\item Se debe garantizar la seguridad de la interfaz, protegiendo los datos y proporcionando mecanismos de autenticación y autorización para los usuarios.
+			\item La interfaz de usuario deberá ser intuitiva y fácil de usar, permitiendo a los usuarios interactuar de manera sencilla con el sistema.
+			\item Deberá existir un panel de control centralizado que muestre información en tiempo real sobre el estado del ganado, incluyendo ubicación, actividad y alertas.
+			\item  Se deberán proporcionar herramientas de configuración y personalización de las áreas permitidas para la circulación del ganado, así como la definición de alarmas y notificaciones.
+			\item La interfaz deberá permitir el acceso a un registro médico completo de cada animal, incluyendo historial de enfermedades, vacunas y tratamientos.
+			\item La interfaz deberá ser compatible con diferentes navegadores web populares, como Chrome, Firefox, Safari, etc.
+			\item Se deberá garantizar la seguridad de la interfaz, protegiendo los datos y proporcionando mecanismos de autenticación y autorización para los usuarios.
+		\end{enumerate}
+		
+	\item Requerimientos de \emph{testing}
+		\begin{enumerate}
+			\item El sistema deberá ser sometido a pruebas exhaustivas para verificar su funcionalidad y rendimiento.
+			\item Se deberán realizar pruebas de integración para garantizar la correcta comunicación entre los componentes del sistema.
+			\item Se deberán realizar pruebas de seguridad para identificar posibles vulnerabilidades y asegurar la protección de los datos.
+			\item Se deberán documentar los resultados de las pruebas y realizar las correcciones necesarias antes de la implementación final del sistema.
 		\end{enumerate}
 		
 \end{enumerate}
-
-\begin{consigna}{red}
-Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
-
-Indicar claramente cuál es la prioridad entre los distintos requerimientos y si hay requerimientos opcionales. 
-
-No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!
-
-Y al escribirlos seguir las siguientes reglas:
-\begin{itemize}
-	\item Ser breve y conciso (nadie lee cosas largas). 
-	\item Ser específico: no dejar lugar a confusiones.
-	\item Expresar los requerimientos en términos que sean cuantificables y medibles.
-\end{itemize}
-\end{consigna}
 
 
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
-\begin{consigna}{red}
-Descripción: En esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
+Para determinar los \emph{story points}, se empleó una escala de Fibonacci en la cual se asignaron valores a las historias de usuario según su complejidad, dificultad e incertidumbre. En esta escala, cada número es la suma de los dos números anteriores en la secuencia de Fibonacci.
 
-El formato propuesto es: "como [rol] quiero [tal cosa] para [tal otra cosa]."
+\begin{quote}
+Como ganadero, quiero poder monitorear la ubicación de cada animal en tiempo real para asegurarme de que no se alejen de las áreas permitidas. \emph{Story points}: 8 (Complejidad: 5 - Dificultad: 3 - Incertidumbre: 0)
+\end{quote} 
 
-Se debe indicar explícitamente el criterio para calcular los \textit{story points} de cada historia
-\end{consigna}
+\begin{quote}
+Como cuidador del ganado, quiero recibir notificaciones automáticas cuando un animal se aleje de su área permitida para poder tomar medidas inmediatas. \emph{Story points}: 13 (Complejidad: 5 - Dificultad: 5 - Incertidumbre: 3)
+\end{quote} 
+
+\begin{quote}
+Como propietario de la finca, quiero poder establecer alarmas personalizadas para cada animal, como alertas de movimiento excesivo o ausencia prolongada, para garantizar su bienestar y seguridad. \emph{Story points}: 8 (Complejidad: 5 - Dificultad: 3 - Incertidumbre: 0)
+\end{quote} 
+
+\begin{quote}
+Como veterinario, quiero acceder a un registro médico completo de cada animal en la plataforma para poder realizar un seguimiento adecuado de su historial de enfermedades, vacunas y tratamientos. \emph{Story points}: 5 (Complejidad: 1 - Dificultad: 3 - Incertidumbre: 1)
+\end{quote} 
+
+\begin{quote}
+Como propietario del ganado, quiero tener acceso a un informe detallado del historial de ubicaciones de cada animal para poder rastrear su movimiento y analizar su comportamiento. \emph{Story points}: 8 (Complejidad: 3 - Dificultad: 3 - Incertidumbre: 2)
+\end{quote} 
+
+\begin{quote}
+Como cuidador del ganado, quiero poder consultar el estado de la batería de los \emph{TAGs} en la plataforma de monitoreo para asegurarme de que están funcionando correctamente. \emph{Story points}: 5 (Complejidad: 1 - Dificultad: 3 - Incertidumbre: 1)
+\end{quote}
+
+\begin{quote}
+Como usuario del sistema, quiero tener la capacidad de realizar actualizaciones remotas del firmware en los \emph{TAGs} para mejorar su funcionalidad y seguridad. \emph{Story points}: 8 (Complejidad: 3 - Dificultad: 3 - Incertidumbre: 2)
+\end{quote} 
+
 
 \section{8. Entregables principales del proyecto}
 \label{sec:entregables}
 
-\begin{consigna}{red}
-
-Los entregables del proyecto son (ejemplo):
+Los entregables del proyecto son:
 
 \begin{itemize}
-	\item Manual de uso
-	\item Diagrama de circuitos esquemáticos
-	\item Código fuente del firmware
-	\item Diagrama de instalación
-	\item Informe final
-	\item etc...
+	\item Manual de usuario: documento que proporciona instrucciones detalladas sobre cómo utilizar el sistema de gestión de ganado, incluyendo las funcionalidades, configuraciones y solución de problemas.
+	\item Diagrama de la solución: representación gráfica de los componentes electrónicos y su interconexión en el dispositivo de gestión de ganado, incluyendo el panel solar, sistema de alimentación, GPS y dispositivo LoRaWAN.
+	\item Código fuente del \emph{firmware}: conjunto de programas y \emph{scripts} necesarios para el funcionamiento del dispositivo de gestión de ganado, incluyendo la comunicación con los \emph{TAGs}, la transferencia de datos y la interacción con el gateway.
+	\item Diagrama de instalación: esquema que muestra cómo se instala y configura el sistema de gestión de ganado en la finca o establecimiento ganadero, incluyendo la ubicación de los dispositivos, antenas y posibles requisitos de red.
+	\item Informe final: documento que resume todo el desarrollo del proyecto, incluyendo los objetivos, metodología, resultados, conclusiones y recomendaciones. También podrá incluir detalles sobre los desafíos enfrentados, lecciones aprendidas y posibles mejoras futuras.
+	\item Prototipo funcional: entrega de un prototipo del dispositivo de gestión de ganado que cumple con los requisitos y funcionalidades especificadas en el proyecto.
+	\item Resultados de pruebas: informe que documenta los resultados de las pruebas realizadas al sistema de gestión de ganado, incluyendo pruebas de funcionalidad, rendimiento, estabilidad y seguridad.
 \end{itemize}
-
-\end{consigna}
 
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
-\begin{consigna}{red}
-El WBS debe tener relación directa o indirecta con los requerimientos.  Son todas las actividades que se harán en el proyecto para dar cumplimiento a los requerimientos. Se recomienda mostrar el WBS mediante una lista indexada:
+A continuación se presenta el WBS (\emph{del inglés Work Breakdown Structure}):
 
 \begin{enumerate}
-\item Grupo de tareas 1
-	\begin{enumerate}
-	\item Tarea 1 (tantas h)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas h)
+\item Investigación (40 horas)
+	\begin{enumerate}	
+	\item  Investigación de tecnologías y soluciones existentes (16 horas)
+	\item  Investigación de requisitos y especificaciones adicionales (16 horas)
+	\item  Análisis de viabilidad y evaluación de alternativas (8 horas)
 	\end{enumerate}
-\item Grupo de tareas 2
+\item Inicio del proyecto (40 horas)
 	\begin{enumerate}
-	\item Tarea 1 (tantas h)
-	\item Tarea 2 (tantas h)
-	\item Tarea 3 (tantas h)
+	\item Definición de objetivos y alcance del proyecto (8 horas)
+	\item Identificación de interesados y requisitos (8 horas)
+	\item Elaboración del plan de proyecto y asignación de recursos (20 horas)
+	\item Reunión con el director del proyecto (4 horas)
 	\end{enumerate}
-\item Grupo de tareas 3
+\item Análisis y diseño (108 horas)
 	\begin{enumerate}
-	\item Tarea 1 (tantas h)
-	\item Tarea 2 (tantas h)
-	\item Tarea 3 (tantas h)
-	\item Tarea 4 (tantas h)
-	\item Tarea 5 (tantas h)
+	\item Revisión de requerimientos y especificaciones (16 horas)
+	\item Diseño de la arquitectura del sistema (20 horas)
+	\item Diseño de la interfaz de usuario (24 horas)
+	\item Evaluación y selección de componentes electrónicos (20 horas)
+	\item Diseño de la estructura de datos y bases de datos (24 horas)
+	\item Reunión con el director del proyecto (4 horas)
+	\end{enumerate}
+\item Desarrollo del \emph{firmware} y \emph{software} (196 horas)
+	\begin{enumerate}
+	\item Programación del firmware del dispositivo IoT (50 horas)
+	\item Desarrollo de la plataforma de gestión y control (50 horas)
+	\item Implementación de la comunicación LoRaWAN (32 horas)
+	\item Integración con \emph{The Things Stack} y \emph{AllThingsTalk} (24 horas)
+	\item Desarrollo de la interfaz de usuario (20 horas)
+	\item Pruebas unitarias y depuración (16 horas)
+	\item Reunión con el director del proyecto (4 horas)
+	\end{enumerate}
+\item Implementación y pruebas (124 horas)
+	\begin{enumerate}
+	\item Adquisición de los componentes y ensamblaje del dispositivo (24 horas)
+	\item Configuración y despliegue del gateway LoRaWAN (24 horas)
+	\item Instalación y configuración del sistema de prueba (24 horas)
+	\item Pruebas de integración y funcionamiento del sistema (24 horas)
+	\item Pruebas de conectividad y transmisión de datos (16 horas)
+	\item Pruebas de rendimiento y estabilidad del sistema (8 horas)
+	\item Reunión con el director del proyecto (4 horas)
+	\end{enumerate}
+\item Documentación y entrega (88 horas)
+	\begin{enumerate}
+	\item Elaboración del manual de usuario (20 horas)
+	\item Documentación técnica del proyecto y sistema (24 horas)
+	\item Preparación de la presentación final (20 horas)
+	\item Revisión y validación de los entregables (12 horas)
+	\item Demostración del sistema a los interesados (4 horas)
+	\item Cierre del proyecto y evaluación de lecciones aprendidas (4 horas)
+	\item Reunión con el director del proyecto (4 horas)
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (tantas h)
+Cantidad total de horas: 596 horas
 
-Se recomienda que no haya ninguna tarea que lleve más de 40 h. 
 
-\end{consigna}
+\vspace*{\fill}
+\pagebreak
 
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
