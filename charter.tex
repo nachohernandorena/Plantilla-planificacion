@@ -40,7 +40,7 @@
  
 \fechaINICIO{25 de abril de 2023}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlan{13 de junio de 2023} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de mayo de 2024}	%Fecha de defensa pública del trabajo final
+\fechaFINALTrabajo{15 de marzo de 2024}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -74,7 +74,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
 %		  Así                                                    & dd/mm/aaaa \\ \hline
-%3      & Se completa hasta el punto 11 inclusive                & dd/mm/aaaa \\ \hline
+3      & Se completa hasta el punto 12 inclusive                & 23 de mayo de 2023  \\ \hline
 %4      & Se completa el plan	                                 & dd/mm/aaaa \\ \hline
 \end{tabularx}
 \end{table}
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de gestión remota de ganado, y tendrá un presupuesto preliminar estimado de 596 horas de trabajo y \textcolor{red}{\$XX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de gestión remota de ganado, y tendrá un presupuesto preliminar estimado de 610 horas de trabajo y \textcolor{red}{\$XX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -251,11 +251,11 @@ Para el desarrollo del presente proyecto se supone que:
 	
 	\item Requerimientos de la interfaz
 		\begin{enumerate}			
-			\item La interfaz de usuario deberá ser intuitiva y fácil de usar, permitiendo a los usuarios interactuar de manera sencilla con el sistema.
+			\item La interfaz de usuario deberá ser intuitiva y fácil de usar, las mismas se medirán de acuerdo a el tiempo promedio de aprendizaje (\textless 1 hora), la tasa de errores de usuario (\textless  5 \% ) y la retroalimentación.
 			\item Deberá existir un panel de control centralizado que muestre información en tiempo real sobre el estado del ganado, incluyendo ubicación, actividad y alertas.
 			\item  Se deberán proporcionar herramientas de configuración y personalización de las áreas permitidas para la circulación del ganado, así como la definición de alarmas y notificaciones.
 			\item La interfaz deberá permitir el acceso a un registro médico completo de cada animal, incluyendo historial de enfermedades, vacunas y tratamientos.
-			\item La interfaz deberá ser compatible con diferentes navegadores web populares, como Chrome, Firefox, Safari, etc.
+			\item La interfaz deberá ser compatible con los siguientes navegadores web: Chrome, Firefox, Edge y Safari.
 			\item Se deberá garantizar la seguridad de la interfaz, protegiendo los datos y proporcionando mecanismos de autenticación y autorización para los usuarios.
 		\end{enumerate}
 		
@@ -310,6 +310,7 @@ Como usuario del sistema, quiero tener la capacidad de realizar actualizaciones 
 Los entregables del proyecto son:
 
 \begin{itemize}
+	\item Informe de avance: documento que contiene una actualización sobre el progreso del presente proyecto.
 	\item Manual de usuario: documento que proporciona instrucciones detalladas sobre cómo utilizar el sistema de gestión de ganado, incluyendo las funcionalidades, configuraciones y solución de problemas.
 	\item Diagrama de la solución: representación gráfica de los componentes electrónicos y su interconexión en el dispositivo de gestión de ganado, incluyendo el panel solar, sistema de alimentación, GPS y dispositivo LoRaWAN.
 	\item Código fuente del \emph{firmware}: conjunto de programas y \emph{scripts} necesarios para el funcionamiento del dispositivo de gestión de ganado, incluyendo la comunicación con los \emph{TAGs}, la transferencia de datos y la interacción con el gateway.
@@ -347,8 +348,9 @@ A continuación se presenta el WBS (\emph{del inglés Work Breakdown Structure})
 	\item Diseño de la estructura de datos y bases de datos (24 horas)
 	\item Reunión con el director del proyecto (4 horas)
 	\end{enumerate}
-\item Desarrollo del \emph{firmware} y \emph{software} (196 horas)
+\item Desarrollo del \emph{firmware} y \emph{software} (220 horas)
 	\begin{enumerate}
+	\item Adquisición de los componentes y ensamblaje del dispositivo (24 horas)
 	\item Programación del firmware del dispositivo IoT (50 horas)
 	\item Desarrollo de la plataforma de gestión y control (50 horas)
 	\item Implementación de la comunicación LoRaWAN (32 horas)
@@ -357,9 +359,8 @@ A continuación se presenta el WBS (\emph{del inglés Work Breakdown Structure})
 	\item Pruebas unitarias y depuración (16 horas)
 	\item Reunión con el director del proyecto (4 horas)
 	\end{enumerate}
-\item Implementación y pruebas (124 horas)
+\item Implementación y pruebas (100 horas)
 	\begin{enumerate}
-	\item Adquisición de los componentes y ensamblaje del dispositivo (24 horas)
 	\item Configuración y despliegue del gateway LoRaWAN (24 horas)
 	\item Instalación y configuración del sistema de prueba (24 horas)
 	\item Pruebas de integración y funcionamiento del sistema (24 horas)
@@ -367,103 +368,52 @@ A continuación se presenta el WBS (\emph{del inglés Work Breakdown Structure})
 	\item Pruebas de rendimiento y estabilidad del sistema (8 horas)
 	\item Reunión con el director del proyecto (4 horas)
 	\end{enumerate}
-\item Documentación y entrega (88 horas)
+\item Documentación y entrega (102 horas)
 	\begin{enumerate}
-	\item Elaboración del manual de usuario (20 horas)
+	\item Elaboración del informe de avance (14 horas)
 	\item Documentación técnica del proyecto y sistema (24 horas)
+	\item Elaboración del manual de usuario (20 horas)
 	\item Preparación de la presentación final (20 horas)
 	\item Revisión y validación de los entregables (12 horas)
+	\item Reunión con el director del proyecto (4 horas)
 	\item Demostración del sistema a los interesados (4 horas)
 	\item Cierre del proyecto y evaluación de lecciones aprendidas (4 horas)
-	\item Reunión con el director del proyecto (4 horas)
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: 596 horas
+Cantidad total de horas: 610 horas
 
 
 \vspace*{\fill}
 \pagebreak
-
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
 
-\begin{consigna}{red}
-Armar el AoN a partir del WBS definido en la etapa anterior. 
-
-%La figura \ref{fig:AoN} fue elaborada con el paquete latex tikz y pueden consultar la siguiente referencia \textit{online}:
-
-%\url{https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_3)\%E2\%80\%94Creating_Flowcharts}
-
-\end{consigna}
-
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.8\textwidth]{./Figuras/AoN.png}
+\includegraphics[width=1.1\textwidth]{./Figuras/AoN.png}
 \caption{Diagrama de \textit{Activity on Node}.}
 \label{fig:AoN}
 \end{figure}
-
-Indicar claramente en qué unidades están expresados los tiempos.
-De ser necesario indicar los caminos semicríticos y analizar sus tiempos mediante un cuadro.
-Es recomendable usar colores y un cuadro indicativo describiendo qué representa cada color, como se muestra en el siguiente ejemplo:
 
 
 
 \section{11. Diagrama de Gantt}
 \label{sec:gantt}
 
-\begin{consigna}{red}
-
-Existen muchos programas y recursos \textit{online} para hacer diagramas de Gantt, entre los cuales destacamos:
-
-\begin{itemize}
-\item Planner
-\item GanttProject
-\item Trello + \textit{plugins}. En el siguiente link hay un tutorial oficial: \\ \url{https://blog.trello.com/es/diagrama-de-gantt-de-un-proyecto}
-\item Creately, herramienta online colaborativa. \\\url{https://creately.com/diagram/example/ieb3p3ml/LaTeX}
-\item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
-\end{itemize}
-
-Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible. 
-Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
-
-Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
-Configurar el software para que al lado de cada barra muestre el nombre de cada tarea.\\
-Revisar que la fecha de finalización coincida con lo indicado en el Acta Constitutiva.
-
-En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de Gantt realizado con el paquete de \textit{pgfgantt}. En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
-
-\begin{figure}[htbp]
-\begin{center}
-\begin{ganttchart}{1}{12}
-  \gantttitle{2020}{12} \\
-  \gantttitlelist{1,...,12}{1} \\
-  \ganttgroup{Group 1}{1}{7} \\
-  \ganttbar{Task 1}{1}{2} \\
-  \ganttlinkedbar{Task 2}{3}{7} \ganttnewline
-  \ganttmilestone{Milestone o hito}{7} \ganttnewline
-  \ganttbar{Final Task}{8}{12}
-  \ganttlink{elem2}{elem3}
-  \ganttlink{elem3}{elem4}
-\end{ganttchart}
-\end{center}
-\caption{Diagrama de Gantt de ejemplo}
-\label{fig:gantt}
-\end{figure}
 
 
 \begin{landscape}
 \begin{figure}[htpb]
 \centering 
 \includegraphics[height=.85\textheight]{./Figuras/Gantt-2.png}
-\caption{Ejemplo de diagrama de Gantt rotado}
+\caption{Diagrama de Gantt}
 \label{fig:diagGantt}
 \end{figure}
 
 \end{landscape}
 
-\end{consigna}
+
 
 
 \section{12. Presupuesto detallado del proyecto}
@@ -536,6 +486,9 @@ Descripción &
 \end{tabularx}%
 \end{table}
 
+
+\vspace*{\fill}
+\pagebreak
 
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
