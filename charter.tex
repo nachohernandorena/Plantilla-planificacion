@@ -40,7 +40,7 @@
  
 \fechaINICIO{25 de abril de 2023}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlan{13 de junio de 2023} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de marzo de 2024}	%Fecha de defensa pública del trabajo final
+\fechaFINALTrabajo{02 de febrero de 2024}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de gestión remota de ganado, y tendrá un presupuesto preliminar estimado de 610 horas de trabajo y \textcolor{red}{\$XX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un prototipo de un sistema de gestión remota de ganado, y tendrá un presupuesto preliminar estimado de 610 horas de trabajo y USD 9015,85, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -399,14 +399,14 @@ Cantidad total de horas: 610 horas
 
 
 \section{11. Diagrama de Gantt}
-\label{sec:gantt}
+\label{sec:diagGantt}
 
-
+A partir del WBS y del AoN definido en las secciones anteriores se establece el diagrama de Gantt como se puede observar a continuación en la figura \ref{fig:diagGantt}.
 
 \begin{landscape}
 \begin{figure}[htpb]
 \centering 
-\includegraphics[height=.85\textheight]{./Figuras/Gantt-2.png}
+\includegraphics[height=1\textheight]{./Figuras/Gantt-2.png}
 \caption{Diagrama de Gantt}
 \label{fig:diagGantt}
 \end{figure}
@@ -419,16 +419,7 @@ Cantidad total de horas: 610 horas
 \section{12. Presupuesto detallado del proyecto}
 \label{sec:presupuesto}
 
-\begin{consigna}{red}
-Si el proyecto es complejo entonces separarlo en partes:
-\begin{itemize}
-	\item Un total global, indicando el subtotal acumulado por cada una de las áreas.
-	\item El desglose detallado del subtotal de cada una de las áreas.
-\end{itemize}
-
-IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
-
-\end{consigna}
+Los costos del presente proyecto se estimaron en dolares estadounidenses. Al momento de elaborar este documento el valor de cotización es USD 1 = \$ 487,00. 
 
 \begin{table}[htpb]
 \centering
@@ -441,47 +432,78 @@ Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
-\rowcolor[HTML]{C0C0C0} 
+  
+  \multicolumn{1}{|l|}{Modulo WiFi LoRa 32 (V3)} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 25,40} &
+  \multicolumn{1}{c|}{USD 25,40} \\ \hline
+  
+  \multicolumn{1}{|l|}{Gateway RAK7243 WisGate Developer D3} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 252,73} &
+  \multicolumn{1}{c|}{USD 252,73} \\ \hline
+  
+  \multicolumn{1}{|l|}{Fuente de alimentación 5V} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 6,35} &
+  \multicolumn{1}{c|}{USD 6,35} \\ \hline
+  
+  \multicolumn{1}{|l|}{Cable micro USB} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 1,85} &
+  \multicolumn{1}{c|}{USD 1,85} \\ \hline
+  
+  \multicolumn{1}{|l|}{Protoboard} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 5,12} &
+  \multicolumn{1}{c|}{USD 5,12} \\ \hline
+  
+  \multicolumn{1}{|l|}{Batería TR 14500 3.7v 1500mAh} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 5,64} &
+  \multicolumn{1}{c|}{USD 5,64} \\ \hline  
+   
+  \multicolumn{1}{|l|}{Panel solar 5V 200mA} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 7,21} &
+  \multicolumn{1}{c|}{USD 7,21} \\ \hline  
+  
+  \multicolumn{1}{|l|}{Modulo GPS GY-NEO6MV2} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 9,12} &
+  \multicolumn{1}{c|}{USD 9,12} \\ \hline    
+  
+  \multicolumn{1}{|l|}{Kit 40 cables Dupont} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 5,47} &
+  \multicolumn{1}{c|}{USD 5,47} \\ \hline  
+  
+  \multicolumn{1}{|l|}{Horas de ingeniería} &
+  \multicolumn{1}{c|}{610} &
+  \multicolumn{1}{c|}{USD 10} &
+  \multicolumn{1}{c|}{USD 6100} \\ \hline
+
+  \multicolumn{3}{|c|}{SUBTOTAL} &
+  \multicolumn{1}{c|}{USD 6439,89} \\ \hline
+  \rowcolor[HTML]{C0C0C0} 
+
 \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
+  
+  \multicolumn{1}{|l|}{40 \% de los costos directos} &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{USD 2575,96} &
+  \multicolumn{1}{c|}{USD 2575,96} \\ \hline
+
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
+  \multicolumn{1}{c|}{USD 2575,96} \\ \hline
 \rowcolor[HTML]{C0C0C0}
 \multicolumn{3}{|c|}{TOTAL} &
+  \multicolumn{1}{c|}{USD 9015,85} 
    \\ \hline
 \end{tabularx}%
 \end{table}
