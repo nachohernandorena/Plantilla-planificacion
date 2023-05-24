@@ -509,33 +509,70 @@ Descripción &
 \end{table}
 
 
-\vspace*{\fill}
-\pagebreak
 
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
 
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
- 
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos de forma negativa)
+a) Identificación de los riesgos y estimación de sus consecuencias::
+
+Los riesgos listados a continuación serán cuantificados, en un rango del 1 al 10, en los siguientes índices:
 \begin{itemize}
-	\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de (O). 
+	\item Severidad (S): Cuanto más severo sea el riesgo, más alto será el número.
+	\item Ocurrencia (O): Cuanto más probable sea que ocurra el riesgo, más alto será el número.
+\end{itemize}  
+
+Riesgo 1: falla en la conectividad de internet.
+\begin{itemize}
+	\item Severidad (S): 8. Si hay una falla en la conectividad de internet, el sistema no podrá enviar ni recibir datos, lo que afectaría gravemente su funcionalidad y utilidad.
+	\item Probabilidad de ocurrencia (O): 2. Existe la posibilidad de que haya interrupciones en la conexión a internet debido a problemas técnicos o eventos externos. Además, se cuenta con conectividad de respaldo por LTE. 
 \end{itemize}   
 
-Riesgo 2:
+Riesgo 2: problemas de configuración y personalización de las áreas permitidas para la circulación del ganado.
 \begin{itemize}
-	\item Severidad (S): 
-	\item Ocurrencia (O):
+	\item Severidad (S): 4. Los problemas de configuración y personalización incorrecta de las áreas permitidas para la circulación del ganado pueden resultar en situaciones no deseadas, como el acceso a áreas restringidas o la exclusión de áreas necesarias. Aunque el riesgo no se considera extremadamente alto, aún existe la posibilidad de que ocurran problemas debido a configuraciones incorrectas.
+	\item Ocurrencia (O): 4. Se realiza una configuración exhaustiva y personalización precisa de las áreas permitidas, y se establece un proceso de verificación y validación. Esto reduce significativamente la probabilidad de problemas de configuración y personalización incorrecta.
 \end{itemize}
 
-Riesgo 3:
+Riesgo 3: pérdida de datos debido a fallas en el almacenamiento o respaldo del código.
 \begin{itemize}
-	\item Severidad (S): 
-	\item Ocurrencia (O):
+	\item Severidad (S): 9. La pérdida de datos implicaría volver a reescribir el código y puede tener consecuencias graves como demoras importantes en el proyecto.
+	\item Ocurrencia (O): 2. Se implementa una estrategia sólida de almacenamiento y respaldo de datos, con control de versiones de Git y el uso de un repositorio en la nube, lo que reduce significativamente el riesgo de pérdida de datos. 
+\end{itemize}
+
+Riesgo 4: interferencias de señal que afectan la transmisión de datos.
+\begin{itemize}
+	\item Severidad (S): 8. Las interferencias de señal pueden tener un impacto significativo en la transmisión de datos. Esto puede resultar en pérdida de datos, demoras en la entrega de información e incluso interrupción completa del sistema. El riesgo de interferencias de señal se considera relativamente alto debido a su potencial impacto negativo en la funcionalidad del sistema.
+	\item Ocurrencia (O): 5. Existen factores que pueden contribuir a la aparición de interferencias de señal, como la presencia de fuentes de interferencia cercanas, condiciones atmosféricas adversas o configuraciones inadecuadas de los dispositivos de comunicación.
+\end{itemize}
+
+Riesgo 5: insuficiente capacidad de almacenamiento de datos.
+\begin{itemize}
+	\item Severidad (S): 6. Si el sistema no tiene suficiente capacidad de almacenamiento de datos, podría haber una pérdida de información importante, como registros médicos de animales, eventos y alertas.
+	\item Ocurrencia (O): 1. La capacidad de almacenamiento de las plataformas a utilizar es adecuada para un entorno de desarrollo, por lo que no se requerirá realizar estimaciones previas.
+\end{itemize}
+
+Riesgo 6: retrasos en la entrega de equipos y componentes.
+\begin{itemize}
+	\item Severidad (S): 9. Los retrasos en la entrega pueden afectar el cronograma de implementación y retrasar el funcionamiento del sistema.
+	\item Ocurrencia (O): 4. Debido a las actuales restricciones a las importaciones en Argentina pueden existir posibilidad de falta de stock de algunos componentes.
+\end{itemize}
+
+Riesgo 7: Falta de tiempo para cumplir con los plazos estimados.
+\begin{itemize}
+	\item Severidad (S): 9. La falta de tiempo para cumplir con los plazos estimados puede tener un impacto significativo en el proyecto. Podría resultar en la entrega tardía del sistema, incumplimiento de compromisos con la carrera de especialización.
+	\item Ocurrencia (O): 2. Dado que se realizó una planificación exhaustiva y realista del proyecto, identificando todas las tareas y estableciendo plazos claros y realistas para cada etapa del proyecto, considerando posibles contingencias y permitiendo un margen de tiempo adicional.
+\end{itemize}
+
+Riesgo 8: problemas de compatibilidad entre el sistema y las plataformas en la nube.
+\begin{itemize}
+	\item Severidad (S): 8. Los problemas de compatibilidad entre el sistema y las plataformas en la nube pueden tener un impacto significativo en la operatividad del sistema en su conjunto, generando dificultades para el intercambio de datos, la sincronización de información y el funcionamiento general del sistema, lo que podría afectar negativamente la eficiencia.
+	\item Ocurrencia (O): 3. Los problemas de compatibilidad pueden ocurrir debido a diferencias en las versiones de software, cambios en los estándares tecnológicos o actualizaciones incompatibles. Si bien no es extremadamente probable que se produzcan problemas de compatibilidad, existen factores que podrían generar esta situación.
+\end{itemize}
+
+Riesgo 9: fallas en la adquisición y calibración de los \emph{TAGs}.
+\begin{itemize}
+	\item Severidad (S): 4. Las fallas en la adquisición y calibración de los \emph{TAGs} pueden tener un impacto en el funcionamiento del sistema de monitoreo del ganado.
+	\item Ocurrencia (O): 3. Se realiza una exhaustiva investigación y selección de proveedores confiables, aún existe cierto grado de incertidumbre en la calidad y calibración de los \emph{TAGs} adquiridos.
 \end{itemize}
 
 
@@ -547,33 +584,49 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
+Falla en la conectividad de internet       & 8  & 2  &  16   &    &    &      \\ \hline
+Problemas de configuración y personalización de las áreas permitidas para la circulación del ganado & 4  & 4  &  16   &    &    &      \\ \hline
+Pérdida de datos debido a fallas en el almacenamiento o respaldo del código & 9  & 2  &  18   &    &    &      \\ \hline
+Interferencias de señal que afectan la transmisión de datos  &  8 & 5  &  40   &  8  &  2  & 16     \\ \hline
+Insuficiente capacidad de almacenamiento de datos & 6  & 1  &  6   &    &    &      \\ \hline
+Retrasos en la entrega de equipos y componentes       & 9  & 4  &  36   &  9  &  2  & 18     \\ \hline
+Falta de tiempo para cumplir con los plazos estimados & 10  & 2 & 20  &    &    &      \\ \hline
+Problemas de compatibilidad entre el sistema y las plataformas en la nube & 8  & 3  &  24  &  6  & 2   &  12    \\ \hline
+Fallas en la adquisición y calibración de los \emph{TAGs}& 4 & 3  &  12   &    &    &      \\ \hline
 \end{tabularx}%
 \end{table}
 
-Criterio adoptado: 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
+
+\pagebreak
+
+Criterio adoptado: se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 20.
 
 Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
 
+
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
  
-Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  - Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-  - Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
 
-Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
- 
-Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
+Riesgo 4: interferencias de señal que afectan la transmisión de datos.
+\begin{itemize}
+	\item Plan de mitigación: se realizará un análisis del entorno y diseñará adecuadamente el sistema de comunicación. Se ubicarám estratégicamente los dispositivos. Estas acciones reducirán la probabilidad de interferencias y minimizarán su impacto en la transmisión de datos, asegurando una comunicación confiable y sin interrupciones.
+	\item Severidad (S*): 8. Este valor permanece igual debido a que las interferencias, de existir, afectarían de igual manera al sistema.
+	\item Ocurrencia (O*): 2. Al implementar el plan de mitigación para este riesgo se reduce significativamente la probabilidad de que ocurran interferencias.
+\end{itemize}
 
-\end{consigna}
+Riesgo 6: retrasos en la entrega de equipos y componentes.
+\begin{itemize}
+	\item Plan de mitigación: Se llevará a cabo una planificación minuciosa utilizando componentes disponibles en el mercado, lo cual disminuye el riesgo de retrasos, aunque todavía existe una posibilidad residual de que ocurran.
+	\item Severidad (S*): 9. El hecho de no poder con los elementos necesarios para la realización del proyecto tendría como consecuencias las mismas demoras, por ende la severidad continuará siendo la misma.
+	\item Ocurrencia (O*): 2. La planificación minuciosa y el uso de componentes disponibles en el mercado disminuirán la probabilidad de retrasos. Sin embargo, todavía hay una posibilidad residual de que ocurran retrasos.
+\end{itemize}
+
+Riesgo 8: problemas de compatibilidad entre el sistema y las plataformas en la nube.
+\begin{itemize}
+    \item Plan de mitigación: Se realizarán pruebas exhaustivas de integración entre el sistema y las plataformas en la nube para identificar y resolver cualquier problema de compatibilidad. Además, se establecerán revisiones de las actualizaciones de las plataformas para anticiparse a los cambios que puedan afectar la compatibilidad. 
+	\item Severidad (S*): 6. Se minimiza el impacto negativo en la operatividad del sistema. Sin embargo, aún existe la posibilidad de que algunos problemas de compatibilidad puedan ocurrir, lo que justifica una severidad moderada.
+	\item Ocurrencia (O*): 2. Se reduce significativamente la probabilidad de problemas de compatibilidad, aunque no se puede eliminar por completo la ocurrencia de estos problemas debido a posibles cambios en los estándares tecnológicos o actualizaciones inesperadas.
+\end{itemize}
 
 
 \section{14. Gestión de la calidad}
