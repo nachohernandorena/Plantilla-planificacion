@@ -251,7 +251,7 @@ Para el desarrollo del presente proyecto se supone que:
 	
 	\item Requerimientos de la interfaz
 		\begin{enumerate}			
-			\item La interfaz de usuario deberá ser intuitiva y fácil de usar, las mismas se medirán de acuerdo a el tiempo promedio de aprendizaje (\textless 1 hora), la tasa de errores de usuario (\textless  5 \% ) y la retroalimentación.
+			\item La interfaz de usuario deberá ser intuitiva y fácil de usar, las mismas se medirán de acuerdo al tiempo promedio de aprendizaje (\textless 1 hora), la tasa de errores de usuario (\textless  5 \% ) y la retroalimentación.
 			\item Deberá existir un panel de control centralizado que muestre información en tiempo real sobre el estado del ganado, incluyendo ubicación, actividad y alertas.
 			\item  Se deberán proporcionar herramientas de configuración y personalización de las áreas permitidas para la circulación del ganado, así como la definición de alarmas y notificaciones.
 			\item La interfaz deberá permitir el acceso a un registro médico completo de cada animal, incluyendo historial de enfermedades, vacunas y tratamientos.
@@ -513,7 +513,7 @@ Descripción &
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
 
-a) Identificación de los riesgos y estimación de sus consecuencias::
+a) Identificación de los riesgos y estimación de sus consecuencias:
 
 Los riesgos listados a continuación serán cuantificados, en un rango del 1 al 10, en los siguientes índices:
 \begin{itemize}
@@ -524,55 +524,43 @@ Los riesgos listados a continuación serán cuantificados, en un rango del 1 al 
 Riesgo 1: falla en la conectividad de internet.
 \begin{itemize}
 	\item Severidad (S): 8. Si hay una falla en la conectividad de internet, el sistema no podrá enviar ni recibir datos, lo que afectaría gravemente su funcionalidad y utilidad.
-	\item Probabilidad de ocurrencia (O): 2. Existe la posibilidad de que haya interrupciones en la conexión a internet debido a problemas técnicos o eventos externos. Además, se cuenta con conectividad de respaldo por LTE. 
+	\item Probabilidad de ocurrencia (O): 2. Existe la posibilidad de que haya interrupciones en la conexión a internet debido a problemas técnicos o eventos externos. Además, se cuenta con conectividad de respaldo, internet móvil (LTE). 
 \end{itemize}   
 
-Riesgo 2: problemas de configuración y personalización de las áreas permitidas para la circulación del ganado.
-\begin{itemize}
-	\item Severidad (S): 4. Los problemas de configuración y personalización incorrecta de las áreas permitidas para la circulación del ganado pueden resultar en situaciones no deseadas, como el acceso a áreas restringidas o la exclusión de áreas necesarias. Aunque el riesgo no se considera extremadamente alto, aún existe la posibilidad de que ocurran problemas debido a configuraciones incorrectas.
-	\item Ocurrencia (O): 4. Se realiza una configuración exhaustiva y personalización precisa de las áreas permitidas, y se establece un proceso de verificación y validación. Esto reduce significativamente la probabilidad de problemas de configuración y personalización incorrecta.
-\end{itemize}
-
-Riesgo 3: pérdida de datos debido a fallas en el almacenamiento o respaldo del código.
+Riesgo 2: pérdida de datos debido a fallas en el almacenamiento o respaldo del código.
 \begin{itemize}
 	\item Severidad (S): 9. La pérdida de datos implicaría volver a reescribir el código y puede tener consecuencias graves como demoras importantes en el proyecto.
 	\item Ocurrencia (O): 2. Se implementa una estrategia sólida de almacenamiento y respaldo de datos, con control de versiones de Git y el uso de un repositorio en la nube, lo que reduce significativamente el riesgo de pérdida de datos. 
 \end{itemize}
 
-Riesgo 4: interferencias de señal que afectan la transmisión de datos.
+Riesgo 3: interferencias de señal que afectan la transmisión de datos.
 \begin{itemize}
 	\item Severidad (S): 8. Las interferencias de señal pueden tener un impacto significativo en la transmisión de datos. Esto puede resultar en pérdida de datos, demoras en la entrega de información e incluso interrupción completa del sistema. El riesgo de interferencias de señal se considera relativamente alto debido a su potencial impacto negativo en la funcionalidad del sistema.
 	\item Ocurrencia (O): 5. Existen factores que pueden contribuir a la aparición de interferencias de señal, como la presencia de fuentes de interferencia cercanas, condiciones atmosféricas adversas o configuraciones inadecuadas de los dispositivos de comunicación.
 \end{itemize}
 
-Riesgo 5: insuficiente capacidad de almacenamiento de datos.
+Riesgo 4: insuficiente capacidad de almacenamiento de datos.
 \begin{itemize}
 	\item Severidad (S): 6. Si el sistema no tiene suficiente capacidad de almacenamiento de datos, podría haber una pérdida de información importante, como registros médicos de animales, eventos y alertas.
 	\item Ocurrencia (O): 1. La capacidad de almacenamiento de las plataformas a utilizar es adecuada para un entorno de desarrollo, por lo que no se requerirá realizar estimaciones previas.
 \end{itemize}
 
-Riesgo 6: retrasos en la entrega de equipos y componentes.
+Riesgo 5: retrasos en la entrega de equipos y componentes.
 \begin{itemize}
 	\item Severidad (S): 9. Los retrasos en la entrega pueden afectar el cronograma de implementación y retrasar el funcionamiento del sistema.
 	\item Ocurrencia (O): 4. Debido a las actuales restricciones a las importaciones en Argentina pueden existir posibilidad de falta de stock de algunos componentes.
 \end{itemize}
 
-Riesgo 7: Falta de tiempo para cumplir con los plazos estimados.
+Riesgo 6: Falta de tiempo para cumplir con los plazos estimados.
 \begin{itemize}
-	\item Severidad (S): 9. La falta de tiempo para cumplir con los plazos estimados puede tener un impacto significativo en el proyecto. Podría resultar en la entrega tardía del sistema, incumplimiento de compromisos con la carrera de especialización.
-	\item Ocurrencia (O): 2. Dado que se realizó una planificación exhaustiva y realista del proyecto, identificando todas las tareas y estableciendo plazos claros y realistas para cada etapa del proyecto, considerando posibles contingencias y permitiendo un margen de tiempo adicional.
+	\item Severidad (S): 9. La falta de tiempo para cumplir con los plazos estimados puede tener un impacto significativo en el proyecto. Podría resultar en la entrega tardía del sistema e incumplimiento de compromisos con la carrera de especialización.
+	\item Ocurrencia (O): 2. Se realizó una planificación exhaustiva del proyecto, identificando todas las tareas y estableciendo plazos claros y realistas para cada etapa, considerando posibles contingencias y permitiendo un margen de tiempo adicional.
 \end{itemize}
 
-Riesgo 8: problemas de compatibilidad entre el sistema y las plataformas en la nube.
+Riesgo 7: problemas de compatibilidad entre el sistema y las plataformas en la nube.
 \begin{itemize}
 	\item Severidad (S): 8. Los problemas de compatibilidad entre el sistema y las plataformas en la nube pueden tener un impacto significativo en la operatividad del sistema en su conjunto, generando dificultades para el intercambio de datos, la sincronización de información y el funcionamiento general del sistema, lo que podría afectar negativamente la eficiencia.
 	\item Ocurrencia (O): 3. Los problemas de compatibilidad pueden ocurrir debido a diferencias en las versiones de software, cambios en los estándares tecnológicos o actualizaciones incompatibles. Si bien no es extremadamente probable que se produzcan problemas de compatibilidad, existen factores que podrían generar esta situación.
-\end{itemize}
-
-Riesgo 9: fallas en la adquisición y calibración de los \emph{TAGs}.
-\begin{itemize}
-	\item Severidad (S): 4. Las fallas en la adquisición y calibración de los \emph{TAGs} pueden tener un impacto en el funcionamiento del sistema de monitoreo del ganado.
-	\item Ocurrencia (O): 3. Se realiza una exhaustiva investigación y selección de proveedores confiables, aún existe cierto grado de incertidumbre en la calidad y calibración de los \emph{TAGs} adquiridos.
 \end{itemize}
 
 
@@ -585,14 +573,12 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
 Falla en la conectividad de internet       & 8  & 2  &  16   &    &    &      \\ \hline
-Problemas de configuración y personalización de las áreas permitidas para la circulación del ganado & 4  & 4  &  16   &    &    &      \\ \hline
 Pérdida de datos debido a fallas en el almacenamiento o respaldo del código & 9  & 2  &  18   &    &    &      \\ \hline
 Interferencias de señal que afectan la transmisión de datos  &  8 & 5  &  40   &  8  &  2  & 16     \\ \hline
 Insuficiente capacidad de almacenamiento de datos & 6  & 1  &  6   &    &    &      \\ \hline
 Retrasos en la entrega de equipos y componentes       & 9  & 4  &  36   &  9  &  2  & 18     \\ \hline
 Falta de tiempo para cumplir con los plazos estimados & 10  & 2 & 20  &    &    &      \\ \hline
 Problemas de compatibilidad entre el sistema y las plataformas en la nube & 8  & 3  &  24  &  6  & 2   &  12    \\ \hline
-Fallas en la adquisición y calibración de los \emph{TAGs}& 4 & 3  &  12   &    &    &      \\ \hline
 \end{tabularx}%
 \end{table}
 
@@ -607,21 +593,21 @@ Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplic
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
  
 
-Riesgo 4: interferencias de señal que afectan la transmisión de datos.
+Riesgo 3: interferencias de señal que afectan la transmisión de datos.
 \begin{itemize}
 	\item Plan de mitigación: se realizará un análisis del entorno y diseñará adecuadamente el sistema de comunicación. Se ubicarám estratégicamente los dispositivos. Estas acciones reducirán la probabilidad de interferencias y minimizarán su impacto en la transmisión de datos, asegurando una comunicación confiable y sin interrupciones.
 	\item Severidad (S*): 8. Este valor permanece igual debido a que las interferencias, de existir, afectarían de igual manera al sistema.
 	\item Ocurrencia (O*): 2. Al implementar el plan de mitigación para este riesgo se reduce significativamente la probabilidad de que ocurran interferencias.
 \end{itemize}
 
-Riesgo 6: retrasos en la entrega de equipos y componentes.
+Riesgo 5: retrasos en la entrega de equipos y componentes.
 \begin{itemize}
 	\item Plan de mitigación: Se llevará a cabo una planificación minuciosa utilizando componentes disponibles en el mercado, lo cual disminuye el riesgo de retrasos, aunque todavía existe una posibilidad residual de que ocurran.
 	\item Severidad (S*): 9. El hecho de no poder con los elementos necesarios para la realización del proyecto tendría como consecuencias las mismas demoras, por ende la severidad continuará siendo la misma.
 	\item Ocurrencia (O*): 2. La planificación minuciosa y el uso de componentes disponibles en el mercado disminuirán la probabilidad de retrasos. Sin embargo, todavía hay una posibilidad residual de que ocurran retrasos.
 \end{itemize}
 
-Riesgo 8: problemas de compatibilidad entre el sistema y las plataformas en la nube.
+Riesgo 7: problemas de compatibilidad entre el sistema y las plataformas en la nube.
 \begin{itemize}
     \item Plan de mitigación: Se realizarán pruebas exhaustivas de integración entre el sistema y las plataformas en la nube para identificar y resolver cualquier problema de compatibilidad. Además, se establecerán revisiones de las actualizaciones de las plataformas para anticiparse a los cambios que puedan afectar la compatibilidad. 
 	\item Severidad (S*): 6. Se minimiza el impacto negativo en la operatividad del sistema. Sin embargo, aún existe la posibilidad de que algunos problemas de compatibilidad puedan ocurrir, lo que justifica una severidad moderada.
@@ -632,39 +618,146 @@ Riesgo 8: problemas de compatibilidad entre el sistema y las plataformas en la n
 \section{14. Gestión de la calidad}
 \label{sec:calidad}
 
-\begin{consigna}{red}
-Elija al menos diez requerientos que a su criterio sean los más importantes/críticos/que aportan más valor y para cada uno de ellos indique las acciones de verificación y validación que permitan asegurar su cumplimiento.
-
-\begin{itemize} 
-\item Req \#1: copiar acá el requerimiento.
+\begin{itemize}
+\item Requerimiento funcional 1.1: el sistema deberá permitir la instalación y configuración de \emph{TAGs} en las orejas de
+los animales.
+\begin{itemize}
+\item Verificación: Realizar pruebas de instalación y configuración de \emph{TAGs} en las orejas de los animales para confirmar que el sistema permite esta funcionalidad.
+\item Validación: Mostrar al cliente la correcta instalación y configuración de los \emph{TAGs} en los animales y obtener su aprobación.
+\end{itemize}
+\end{itemize}
 
 \begin{itemize}
-	\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente. Detallar 
-	\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido. Detallar  
+\item Requerimiento funcional 1.3: el sistema deberá recopilar y procesar la información de los \emph{TAGs} y enviarla al
+gateway.
+\begin{itemize}
+\item Verificación: Simular la recopilación y procesamiento de la información de los \emph{TAGs}, y verificar que los datos se envían correctamente al gateway.
+\item Validación: Mostrar al cliente la transmisión de datos desde los \emph{TAGs} al gateway y solicitar su validación.
+\end{itemize}
 \end{itemize}
 
+\begin{itemize}
+\item Requerimiento funcional 1.4: el sistema deberá proporcionar una plataforma para la gestión, control, almacena-
+miento y visualización de los datos generados por los dispositivos.
+\begin{itemize}
+\item Verificación: Realizar pruebas de la plataforma para confirmar que permite la gestión, control, almacenamiento y visualización de los datos generados por los dispositivos.
+\item Validación: Presentar al cliente la plataforma y demostrar su capacidad para gestionar, controlar, almacenar y visualizar los datos, obteniendo su aprobación.
+\end{itemize}
 \end{itemize}
 
-Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos, revisión de hojas de datos, consulta con expertos, mediciones, etc.  Las acciones de verificación suelen considerar al entregable como ``caja blanca'', es decir se conoce en profundidad su funcionamiento interno.  En cambio, las acciones de validación suelen considerar al entregable como ``caja negra'', es decir, que no se conocen los detalles de su funcionamiento interno.
+\begin{itemize}
+\item Requerimiento funcional 1.6: el sistema deberá ofrecer la posibilidad de establecer alarmas para eventos relevantes,
+como la salida de un animal del área permitida.
+\begin{itemize}
+\item Verificación: Establecer alarmas en el sistema y verificar que se generan las notificaciones correspondientes cuando ocurren eventos relevantes, como la salida de un animal del área permitida.
+\item Validación: Mostrar al cliente la generación de alarmas y notificaciones en situaciones de eventos relevantes y obtener su validación.
+\end{itemize}
+\end{itemize}
 
-\end{consigna}
+\begin{itemize}
+\item Requerimiento funcional 1.7: el sistema deberá permitir el monitoreo en tiempo real del ganado a través de un
+tablero personalizable.
+\begin{itemize}
+\item Verificación: Realizar pruebas de monitoreo en tiempo real del ganado a través de un tablero personalizable y confirmar que se actualiza correctamente la información.
+\item Validación: Presentar al cliente el tablero de monitoreo en tiempo real y obtener su aprobación sobre la actualización correcta de la información.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Requerimiento de seguridad 2.1: el sistema deberá garantizar la privacidad y seguridad de los datos de IoT mediante características de seguridad avanzadas, como el cifrado de extremo a extremo y protocolos de comunicación seguros.
+\begin{itemize}
+\item Verificación: Realizar pruebas de seguridad avanzadas, como comprobar el cifrado de extremo a extremo y la comunicación segura, para garantizar la privacidad y seguridad de los datos de IoT.
+\item Validación: Presentar al cliente las medidas de seguridad implementadas y obtener su validación sobre la privacidad y seguridad de los datos.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Requerimiento de seguridad 2.2: el sistema deberá contar con un proceso de autenticación seguro para nuevos dispositivos que se conecten a la red.
+\begin{itemize}
+\item Verificación: Probar el proceso de autenticación seguro para nuevos dispositivos y verificar que solo los dispositivos autorizados puedan conectarse a la red.
+\item Validación: Mostrar al cliente el proceso de autenticación seguro y obtener su validación sobre la restricción de acceso a dispositivos no autorizados.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Requerimiento de integración 3.1: el sistema deberá integrarse con la plataforma en la nube \emph{The Things Stack} a través
+de una conexión a internet.
+\begin{itemize}
+\item Verificación: Establecer una conexión a internet y comprobar la integración exitosa del sistema con la plataforma en la nube \emph{The Things Stack}.
+\item Validación: Presentar al cliente la conexión exitosa con \emph{The Things Stack} y obtener su validación sobre la integración.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Requerimiento de integración 3.2: el sistema deberá permitir la integración con otras plataformas en la nube, bases
+de datos y herramientas de análisis mediante HTTP, utilizando la plataforma \emph{AllThingsTalk}.
+\begin{itemize}
+\item Verificación: Realizar pruebas de integración con otras plataformas en la nube, bases de datos y herramientas de análisis utilizando HTTP y la plataforma \emph{AllThingsTalk}.
+\item Validación: Mostrar al cliente la integración exitosa con las plataformas, bases de datos y herramientas de análisis, y obtener su validación.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Requerimiento de documentación 4.1: se deberá generar documentación detallada sobre la instalación, configuración y uso
+del sistema.
+\begin{itemize}
+\item Verificación: Generar documentación detallada sobre la instalación, configuración y uso del sistema, asegurando que esté completa y precisa.
+\item Validación: Entregar al cliente la documentación generada y obtener su confirmación de que es comprensible y útil.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Requerimiento de la interfaz 5.2: deberá existir un panel de control centralizado que muestre información en tiempo real sobre el estado del ganado, incluyendo ubicación, actividad y alertas.
+\begin{itemize}
+\item Verificación: Mostrar al cliente el panel de control centralizado que muestra información en tiempo real sobre el estado del ganado, incluyendo ubicación, actividad y alertas, y confirmar que se actualiza correctamente.
+\item Validación: Obtener la validación del cliente al demostrar el funcionamiento correcto del panel de control y su capacidad para mostrar la información relevante.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Requerimiento de la interfaz 5.4: la interfaz deberá permitir el acceso a un registro médico completo de cada animal,
+incluyendo historial de enfermedades, vacunas y tratamientos.
+\begin{itemize}
+\item Verificación: Verificar que la interfaz permita el acceso a un registro médico completo de cada animal, incluyendo historial de enfermedades, vacunas y tratamientos, y que la información se muestre de manera precisa y organizada.
+\item Validación: Presentar al cliente la interfaz que muestra el registro médico completo de los animales y obtener su validación sobre la precisión y accesibilidad de la información.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Requerimiento de \emph{testing} 6.3: se deberán realizar pruebas de seguridad para identificar posibles vulnerabilidades y
+asegurar la protección de los datos.
+\begin{itemize}
+\item Verificación: Realizar pruebas de seguridad exhaustivas para identificar posibles vulnerabilidades en el sistema y garantizar la protección de los datos.
+\item Validación: Presentar los resultados de las pruebas de seguridad al cliente y obtener su validación de que el sistema cumple con los estándares de seguridad requeridos.
+\end{itemize}
+\end{itemize}
 
 \section{15. Procesos de cierre}    
 \label{sec:cierre}
 
-\begin{consigna}{red}
-Establecer las pautas de trabajo para realizar una reunión final de evaluación del proyecto, tal que contemple las siguientes actividades:
+Las actividades de los procesos de cierre estarán a cargo del responsable del proyecto, Ignacio Pablo Hernandorena. Se llevarán a cabo las siguientes acciones:
 
 \begin{itemize}
-	\item Pautas de trabajo que se seguirán para analizar si se respetó el Plan de Proyecto original:
-	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento a aplicar. 
-	\item Identificación de las técnicas y procedimientos útiles e inútiles que se emplearon, y los problemas que surgieron y cómo se solucionaron:
-	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento para dejar registro.
-	\item Indicar quién organizará el acto de agradecimiento a todos los interesados, y en especial al equipo de trabajo y colaboradores:
-	  - Indicar esto y quién financiará los gastos correspondientes.
+	\item Análisis del grado de cumplimiento de la planificación:
+		\begin{itemize}
+		\item Se comparará la planificación inicial con la ejecución real del proyecto. 
+		\item Se identificarán aquellas tareas que no se cumplieron dentro de los plazos establecidos.
+		\item Se realizará una evaluación de las causas de retraso y se documentará esta información para futuros proyectos. 
+	 \end{itemize}
+	\item Identificación de técnicas y procedimientos útiles e inútiles:
+		\begin{itemize}
+		\item Se analizarán las distintas técnicas y procedimientos utilizados durante el proyecto.
+		\item Se resaltarán aquellos que resultaron útiles y contribuyeron al logro de los objetivos.
+		\item Se identificarán aquellos que fueron considerados inútiles o que no tuvieron el impacto esperado.
+		\item Se destacarán las herramientas y tecnologías más relevantes utilizadas durante el desarrollo del proyecto.
+	 \end{itemize}
+	\item Presentación formal del proyecto y agradecimientos:
+		\begin{itemize}
+		\item Se llevará a cabo una presentación formal del proyecto. 
+		\item Durante la presentación, se expresará agradecimiento a todas las personas involucradas en el proyecto, incluyendo miembros del jurado, docentes y autoridades de la CEIoT.
+	 \end{itemize}
 \end{itemize}
 
-\end{consigna}
 
 
 \end{document}
