@@ -20,7 +20,7 @@
 \autor{Ing. Ignacio Pablo Hernandorena} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director {Mg. Ing. Carlos Canal (pendiente aprobación)}
+\director {Mg. Ing. Carlos Canal}
 \pertenenciaDirector{UNSAM} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
 %\codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
@@ -512,7 +512,7 @@ Descripción &
 
 a) Identificación de los riesgos y estimación de sus consecuencias:
 
-Los riesgos listados a continuación serán cuantificados, en un rango del 1 al 10, en los siguientes índices:
+Los riesgos listados a continuación serán cuantificados, en un rango del 1 al 10, con los siguientes índices:
 \begin{itemize}
 	\item Severidad (S): Cuanto más severo sea el riesgo, más alto será el número.
 	\item Ocurrencia (O): Cuanto más probable sea que ocurra el riesgo, más alto será el número.
@@ -521,7 +521,7 @@ Los riesgos listados a continuación serán cuantificados, en un rango del 1 al 
 Riesgo 1: falla en la conectividad de internet.
 \begin{itemize}
 	\item Severidad (S): 8. Si hubiera una falla en la conectividad de internet, el sistema no podría enviar ni recibir datos, lo que afectaría gravemente su funcionalidad y utilidad.
-	\item Probabilidad de ocurrencia (O): 2. Existe la posibilidad de que haya interrupciones en la conexión a internet debido a problemas técnicos o eventos externos. Además, se cuenta con conectividad de respaldo, internet móvil (LTE). 
+	\item Probabilidad de ocurrencia (O): 2. Existe la posibilidad de que haya interrupciones en la conexión a internet debido a problemas técnicos o eventos externos. Sin embargo, se cuenta con conectividad de respaldo a través de internet móvil (LTE). 
 \end{itemize}   
 
 Riesgo 2: pérdida de datos debido a fallas en el almacenamiento o respaldo del código.
@@ -578,9 +578,6 @@ Falta de tiempo para cumplir con los plazos estimados & 10  & 2 & 20  &    &    
 Problemas de compatibilidad entre el sistema y las plataformas en la nube & 8  & 3  &  24  &  6  & 2   &  12    \\ \hline
 \end{tabularx}%
 \end{table}
-
-
-\pagebreak
 
 Criterio adoptado: se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 20.
 
